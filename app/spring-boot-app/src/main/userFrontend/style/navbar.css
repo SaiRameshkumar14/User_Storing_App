@@ -1,0 +1,81 @@
+* {
+    scroll-behavior: smooth;
+}
+
+.element::-webkit-scrollbar {
+  display: none;
+}
+
+
+body {
+    background-image: linear-gradient(318deg, rgb(4, 113, 180), rgb(3, 44, 105));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 80px; 
+}
+
+#navbar_section {
+    position: fixed;
+    box-sizing: border-box;
+    width: 100%;
+    top: 0; 
+}
+
+.navitems {
+    /* around space */
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right: 4rem;
+    /* Responsive */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: center;
+    /* Decorations */
+    list-style-type: none;
+    color: wheat;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navcontent {
+    margin: 0px 1vw;
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
+    padding: 5px 20px 7px;
+    font-size: 80%;
+    font-weight: 400;
+}
+
+.active {
+    color: rgb(2, 40, 98);
+    background-color: wheat;
+    transition: 0.5s;
+
+}
+
+li:hover {
+    cursor: pointer;
+    overflow: hidden;
+    color: rgb(2, 40, 98);
+    background-color: wheat;
+    border-style: 0px solid transparent;
+    transition: 0.3s;
+    border-color: rgb(3, 133, 213);
+}
+
+.upicon {
+    fill: wheat;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 35px;
+    z-index: 100;
+    cursor: pointer;
+}

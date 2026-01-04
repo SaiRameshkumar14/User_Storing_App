@@ -1,0 +1,68 @@
+table,
+th,
+td {
+    border: 1px solid wheat;
+    border-collapse: collapse;
+    color: wheat;
+}
+
+#register{
+    padding-top: 8rem;
+}
+
+th{
+    padding: 20px 60px;
+}
+
+td{
+    padding: 20px;
+}
+
+.table-row-1-column-1 > p, .table-row-1-column-2 > p{
+    font-size: 22px;
+}
+
+.table-row-1-column-3-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.table-btn {
+    color: rgb(2, 40, 98);
+    background-color: wheat;
+    border-radius: 8px;
+    border: 1px solid wheat;
+    padding: 8px 30px;
+    font-size: 80%;
+    font-weight: 400;
+}
+
+.table-btn:hover {
+    color: wheat;
+    background-color: rgb(2, 60, 148);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-row {
+    text-align: center;
+}
+
+input[type="file"]::file-selector-button {
+    color: rgb(2, 40, 98);
+    background-color: wheat;
+    border-radius: 8px;
+    border: 1px solid wheat;
+    padding: 5px 10px;
+    margin: 0px 10px;
+}
+
+input[type="file"]::file-selector-button:hover {
+    cursor: pointer;
+    color: wheat;
+    background-color: rgb(2, 40, 98);
+    transition: 0.2s;
+
+}

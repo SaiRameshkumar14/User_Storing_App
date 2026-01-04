@@ -1,0 +1,17 @@
+//	@PostMapping("/addUser")
+//	public User addUser(@RequestBody User user) {
+//		return userService.createUser(user);
+//	}
+
+    // Getting data from parameter in url path
+//	@PostMapping("/addUser")
+//	public ResponseEntity<String> addUser(@RequestParam("name") String userName, @RequestParam("address") String userAddress) {
+//		return userService.createUser(userName, userAddress);
+//	}
+
+//	@PutMapping("/updateuser")
+//	public User updateUser(@RequestBody User user) {
+//		return userService.updateUser(user);
+//	}
+
+//    @CrossOrigin

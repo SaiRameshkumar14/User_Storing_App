@@ -1,0 +1,79 @@
+.singleUser {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 50px;
+    color: wheat;
+    padding: 120px 0px 20px;
+}
+
+.singleUser_left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 3rem;
+}
+
+.singleUser_left_Heading {
+    font-size: 1rem;
+}
+
+.singleUser_right {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    padding: 30px 0px;
+
+}
+
+.singleUser_right_heading {
+    font-size: 1rem;
+}
+
+.singleUser_right_response,
+.singleUser_right_response>h2 {
+    max-width: 350px;
+    font-size: 20px;
+}
+
+.vertical-line-bg {
+    background-color: wheat;
+    display: inline-block;
+    margin: 0 10px;
+    border-right: 2px solid wheat;
+}
+
+.singleUser_submit {
+    color: rgb(2, 40, 98);
+    background-color: wheat;
+    border-radius: 10px;
+    border: 1px solid wheat;
+    padding: 10px 40px;
+    font-size: 80%;
+    font-weight: 400;
+}
+
+.inputfield {
+    margin-top: 10px;
+    color: wheat;
+    width: 200px;
+    background: transparent;
+    border-radius: 10px;
+    border: 1px solid wheat;
+    padding: 10px 40px 10px 10px;
+    font-size: 80%;
+    font-weight: 400;
+}
+
+input::placeholder{
+    color: wheat;
+}
+
+.singleUser_submit:hover {
+    color: wheat;
+    background-color: rgb(2, 60, 148);
+    cursor: pointer;
+    transition: 0.2s;
+}

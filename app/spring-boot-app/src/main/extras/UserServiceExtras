@@ -1,0 +1,30 @@
+//	public User createUser(User user) {
+//		return userRepository.save(user);
+//	}
+
+//	public String createUsers(List<User> users) {
+//		userRepository.saveAll(users);
+//		return "All Users Got Created Successfully";
+//	}
+
+
+//    @CrossOrigin
+//    @PostMapping("/user")
+//    public ResponseEntity<String> addUser(@RequestParam("name") String userName, @RequestParam("address") String userAddress) {
+//        return userService.createUser(userName, userAddress);
+//    }
+
+//    public String updateUser(int id, String name, String address) {
+//        User oldUser=null;
+//        Optional<User> optionaluser=userRepository.findById(id);
+//        if(optionaluser.isPresent()) {
+//            oldUser=optionaluser.get();
+//            oldUser.setName(name);
+//            oldUser.setAddress(address);
+//            userRepository.save(oldUser);
+//        }else {
+//            createUser(name,address);
+//            return "User details can't find in database, so new user has created";
+//        }
+//        return "User Modified Successfully";
+//    }

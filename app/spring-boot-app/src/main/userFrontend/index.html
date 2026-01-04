@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/navbar.css">
+    <link rel="stylesheet" href="./style/single.css">
+    <link rel="stylesheet" href="/style/register-table.css">
+    <title>Home</title>
+</head>
+
+<body class="element">
+    <center>
+        <nav>
+            <section id="navbar_section">
+                <div class="navbar scroll">
+                    <ul class="navitems">
+                        <a href="#register">
+                            <li class="navcontent">Register</li>
+                        </a>
+                        <a href="#view">
+                            <li class="navcontent">View</li>
+                        </a>
+                        <a href="#modify">
+                            <li class="navcontent">Modify</li>
+                        </a>
+                        <!-- <a href="./ModifyUser.html" target="_blank"><button>Update User Details</button></a>                -->
+                    </ul>
+                </div>
+            </section>
+        </nav>
+
+
+        <!-- Up arrow Icon -->
+        <a href="#home"><svg class="upicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                <path
+                    d="M320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM331.3 188.7L435.3 292.7C439.9 297.3 441.2 304.2 438.8 310.1C436.4 316 430.5 320 424 320L368 320L368 416C368 433.7 353.7 448 336 448L304 448C286.3 448 272 433.7 272 416L272 320L216 320C209.5 320 203.7 316.1 201.2 310.1C198.7 304.1 200.1 297.2 204.7 292.7L308.7 188.7C314.9 182.5 325.1 182.5 331.3 188.7z" />
+            </svg></a>
+
+
+        <section id="home">
+            <center>
+                <h1 style="color: wheat; padding: 300px;">Welcome Buddy..!!</h1>
+            </center>
+        </section>
+
+        <section id="register">
+
+            <table>
+                <tr class="table_heading">
+                    <th colspan="2">
+                        <h1>User Register</h1>
+                    </th>
+                    <th>
+                        <h1>Upload Excel</h1>
+                    </th>
+                </tr>
+                <tr>
+                    <td class="table-row-1-column-1">
+                        <p>Register <span style="font-weight: 800;">Single User</span> <br>to store in Database
+                            <br>click go to navigate.
+                        </p>
+                    </td>
+                    <td class="table-row-1-column-2">
+                        <p>Register <span style="font-weight: 800;">Multiple User</span> <br>to store in Database
+                            <br>click go to navigate.
+                        </p>
+                    </td>
+                    <td class="table-row-1-column-3">
+                        <form class="table-row-1-column-3-form" action="/" method="post">
+                            <h3>Choose the Excel file</h3>
+                            <input class="inputfield" type="file">
+                        </form>
+                    </td>
+                </tr>
+                <tr class="table-row3">
+                    <td class="btn-row"> <a href="#single"><button class="table-btn">Go</button></a>
+                    </td>
+                    <td class="btn-row"> <a href="#multiple"><button class="table-btn">Go</button></a>
+                    </td>
+                    <td class="btn-row"> <button class="table-btn">Submit</button>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- <div class="register_main">
+                <div class="register_left">
+                    <div class="register_left_top">
+                        <h2>Single user</h2>
+                    </div>
+                    <div class="register_left_top">
+                        <h2>Single user</h2>
+                    </div>
+                </div>
+                <div class="register_left">
+                    <div class="register_left_top">
+                        <h2>Single user</h2>
+                    </div>
+                    <div class="register_left_top">
+                        <h2>Single user</h2>
+                    </div>
+                </div>
+            </div> -->
+        </section>
+
+        <div style="height: 50rem;"></div>
+
+
+        <section id="single">
+
+            <div class="singleUser">
+                <div class="singleUser_left">
+                    <div class="singleUser_left_Heading">
+                        <h1>Fill the User Details</h1>
+                    </div>
+                    <div class="singleUser_left_form">
+                        <form id="singleForm">
+                            <label for="name">Enter Your Name</label><br>
+                            <input class="inputfield" type="text" name="name" id="name" placeholder="Full Name"><br><br>
+
+                            <label for="address">Enter Your Address</label><br>
+                            <input class="inputfield" type="text" name="address" id="address"
+                                placeholder="Address"><br><br>
+
+                            <button class="singleUser_submit" id="singleUser_submit">Submit</button>
+
+                        </form>
+                    </div>
+                </div>
+
+                <span class="vertical-line-bg"></span>
+
+                <div class="singleUser_right">
+                    <div class="singleUser_right_heading">
+                        <h1>Response Shown Here</h1>
+                    </div>
+
+                    <div class="singleUser_right_response" id="singleUser_right_response">
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- gap -->
+            <!-- <div style="height: 50rem;"></div> -->
+
+        </section>
+
+        <section id="multiple" style="margin-bottom: 300px;">
+            <center>
+
+                <div class="singleUser">
+                    <div class="singleUser_left">
+                        <div class="singleUser_left_Heading">
+                            <h1>Fill the User Details</h1>
+                        </div>
+                        <div class="singleUser_left_form">
+                            <form id="multiUser">
+                                <label for="name">Enter Your Name :</label><br>
+                                <input class="inputfield" type="text" name="multiple_name" id="multiple_name"
+                                    placeholder="Full Name"><br><br>
+
+                                <label for="address">Enter Your Location</label><br>
+                                <input class="inputfield" type="text" name="multiple_address" id="multiple_address"
+                                    placeholder="Address"><br><br>
+
+                                <p class="singleUser_submit" onclick="addUser()" style="cursor: pointer;">Add</p>
+                            </form>
+                        </div>
+                    </div>
+
+                    <span class="vertical-line-bg"></span>
+
+                    <div id="addedUser"></div>
+
+                    <span class="vertical-line-bg"></span>
+
+
+                    <div class="multiUser_right">
+                        <div class="multiUser_right_heading">
+                            <h1>Response Shown Here</h1>
+                        </div>
+
+                        <div class="multiUser_right_response" id="multiUser_right_response">
+                        </div>
+                        <button class="singleUser_submit" id="multiUser_submit">Submit</button>
+                    </div>
+                </div>
+
+            </center>
+
+        </section>
+
+    </center>
+
+    <script src="/js/register.js"></script>
+
+    <script src="/js/registerSingle.js"></script>
+
+</body>
+
+</html>
